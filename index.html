@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Define la codificación de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Configura la ventana gráfica -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Establece el título de la página -->
+  <title>Contact Form UI</title>
+  <!-- Establece el ícono de la página -->
+  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  <!-- Vincula la hoja de estilos local -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Vincula la hoja de estilos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Formulario de contacto -->
+  <form class="form">
+    <!-- Imagen de la cámara -->
+    <img src="assets/img/camera.png">
+
+    <!-- Encabezado "PHOTOGRAPHY" -->
+    <h2>PHOTOGRAPHY</h2>
+    <!-- Encabezado "Contact us" -->
+    <h4>Contact us</h4>
+
+    <!-- Campo de texto para el nombre -->
+    <p type="Name:"><input type="text" placeholder="Write your name here..." required></input></p>
+    <!-- Campo de texto para el correo electrónico -->
+    <p type="Email:"><input type="email" placeholder="Let us know how to contact you back..." required></input></p>
+    <!-- Campo de texto para el mensaje -->
+    <p type="Message:"><input type="text" placeholder="What would you like to tell us..." required></input></p>
+
+    <!-- Botón para enviar el mensaje -->
+    <button>Send Message</button>
+
+    <div>
+      <!-- Icono de teléfono y número de teléfono -->
+      <span class="fa fa-fas fa-phone-alt"></span>+52 784 141 7356
+      <!-- Icono de sobre y dirección de correo electrónico -->
+      <span class="fa far fa-envelope"></span>contact@gmail.com
+    </div>
+  </form>
+
+  <!-- Contenedor del modal -->
+  <div class="modal-container" id="modal-container">
+    <div class="modal">
+      <!-- Encabezado "Form Submitted" -->
+      <h2>Form Submitted</h2>
+      <!-- Mensaje de éxito -->
+      <h4>Your form has been submitted successfully!</h4>
+
+      <div class="form-values">
+        <!-- Valor del nombre del formulario -->
+        <p type="Name:" id="name-value"></p>
+        <!-- Valor del correo electrónico del formulario -->
+        <p type="Email:" id="email-value"></p>
+        <!-- Valor del mensaje del formulario -->
+        <p type="Message:" id="message-value"></p>
+      </div>
+
+      <!-- Botón de cierre -->
+      <button class="close">Close</button>
+    </div>
+  </div>
+
+  <!-- Inclusión del archivo JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
