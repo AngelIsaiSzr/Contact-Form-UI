@@ -1,5 +1,5 @@
 // Función para iniciar el carrusel de imágenes
-document.addEventListener("DOMContentLoaded", function() {
+function startImageSlideshow() {
     const images = ["assets/img/slider-1.jpg", "assets/img/slider-2.jpg", "assets/img/slider-3.jpg"];
     let index = 0;
 
@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Intervalo de tiempo para cambiar de imagen automáticamente
     setInterval(nextImage, 3000);
 }
+
+// Inicia el carrusel de imágenes
+startImageSlideshow();
 
 // Selecciona el formulario
 const form = document.querySelector(".form");
